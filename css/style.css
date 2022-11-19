@@ -1,0 +1,641 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Raleway', serif;
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --globalActiveColor: rgb(33, 150, 243);
+}
+
+.all-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid blueviolet;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------HEADER-------------------------------------------------------------*/
+.header-container{
+    display: flex;
+    align-content: stretch;
+}
+
+
+.header {
+    display: flex;
+    height: 80px;
+}
+
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--globalActiveColor);
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    padding-left: 93px;
+    height: 80px;
+}
+
+.header-item {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.header-item:not(:last-child) {
+    margin-right: 53px;
+}
+
+.header-info {
+    display: flex;
+    outline: 2px solid red;
+    align-items: center;
+    margin-left: 344px;
+}
+
+.header-href {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    font-style: normal;
+}
+
+.header-href:not(:last-child) {
+    margin-right: 51px;
+}
+
+header a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header a:hover,
+header a:focus {
+    color: var(--globalActiveColor);
+}
+
+
+
+.logo-web {
+    color: var(--globalActiveColor);
+}
+
+.logo-studio {
+    color: black;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+
+
+
+
+/*----------------------------------------------------------------MAIN------------------------------------------------------------*/
+
+
+
+.hero-container {
+    background: #2F303A;
+    width: 1600px;
+    margin-bottom: 94px;
+    background-image: url(/images/people/Img\ \(13\)\ \(1\).jpg);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 600px;
+    background-image: linear-gradient(to right black#2F303A);
+    background-image: url(/images/icons.svg/Img\ \(1\).svg);
+}
+
+.hero-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 215px;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196F3;
+    color: white;
+    margin-top: 44px;
+    border: 0px;
+    height: 50px;
+    width: 216px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.main-container{
+    width: 1170px;
+    height: 248px;
+}
+
+
+
+
+.main-list{
+    display: flex;
+    flex-direction: row;
+padding: 0px;
+
+
+
+}
+
+.main-ithem{
+    width: 270px;
+    height: 248px;
+  
+  list-style: none;
+
+
+}
+
+.main-ithem:not(:last-child){
+margin-right: 30px;
+
+}
+
+.svg-icon{
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main-ithem-haeder {
+    width: 270px;
+    height: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.main-ithem-content {
+    width: 270px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+   
+}
+
+/* .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 286px;
+    outline: 2px solid red;
+}
+
+.main-text {
+    display: flex;
+    align-items: baseline;
+} */
+
+/* .main-list {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+
+    align-items: baseline;
+    outline: 2px solid red;
+}
+
+.main-ithem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    outline: 2px solid green;
+}
+
+.main-ithem:not(:last-child) {
+    margin-right: 50px;
+}
+ */
+
+/* 
+
+
+
+
+
+
+.main-ithem-haeder {
+    font-style: normal;
+
+} */
+
+.about-photo {
+    outline: 2px solid gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+
+.header-aboutus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.style-ithem-fspg {
+    margin-right: 20px;
+}
+
+.team-container {
+    display: flex;
+    outline: 2px dashed blue;
+    height: 648px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-about {
+    margin-top: 2px;
+    margin-bottom: 60px;
+    outline: 2px solid rebeccapurple;
+}
+
+.style-ithem-fspg {
+    display: block;
+    list-style: none;
+    margin-right: 10px;
+}
+
+
+.style-ithem-team {
+    outline: 2px solid green;
+    display: flex;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.header-about {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.ithem-team-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.ithem-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+
+/*-----------------------------------------------------------Portfolio------------------------------------------------------------*/
+
+.global-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid blueviolet;
+}
+
+
+
+.header-container-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.header-mail {
+    display: flex;
+    margin-top: 35px;
+    margin-left: 400px;
+}
+
+.svg-tel{
+     margin-right: 7px;
+  outline: 2px solid red;
+}
+
+.svg-tel:hover{
+    color:var(--globalActiveColor);
+}
+
+
+
+.portfolio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+
+.main-container-photo {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 1200px;
+    padding-top: 50px;
+    padding-left: 50px;
+
+
+}
+
+
+
+
+
+.style-btn {
+    border: 0px;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding: 8px 25px;
+}
+
+.style-btn:hover {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+    background-color: rgb(33, 150, 243);
+    border-color: rgb(33, 150, 243);
+    border-radius: 3px;
+}
+
+
+.orient-btn {
+    display: inline-block;
+}
+
+.orient-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+
+.products-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.about-product {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.style-ithem-portf {
+    list-style-type: none;
+    padding-right: 13px;
+    padding-bottom: 13px;
+}
+
+.style-ithem-fspg {
+    list-style-type: none;
+}
+
+/*--------------------------------------------------------FOOTER---------------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+    background-color: #2F303A;
+    width: 1600px;
+    height: 300px;
+    margin-top: 100px;
+
+}
+.footer-right{
+   
+  margin: 59px 95px 59px 215px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+justify-content: flex-start; 
+    padding-top: 50px;
+
+}
+
+
+.header-logo {
+    padding-left: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+
+
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: var(--globalActiveColor);
+}
+
+.address-map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    padding: 15px 0px;
+
+}
+
+.logo-studio-footer {
+    color: white;
+}
+
+.style-footer {
+    list-style-type: none;
+}
+
+.style-footer-mail {
+    margin: 15px 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-href {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-end;
+    width: 206px;
+    height: 80px;
+    
+    }
+
+    .footer-left >h3{
+        padding-right: 50px;
+        padding-bottom: 20px;
+        color: #FFFFFF;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+   
+   
+    .icons-tiny:not(:last-child){
+        margin-right: 10px;
+    }
+        
+    .svg-tag{
+        color: #FFFFFF;
+        background-color: gray;
+        padding: 10px;
+        border-radius: 50%;
+    
+    }
+
+
